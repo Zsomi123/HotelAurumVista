@@ -1,0 +1,253 @@
+
+@font-face {
+  font-family: 'HotelFont';
+  src: url('../font/hotel.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    background-color: #040303;
+    font-family: 'HotelFont', sans-serif;
+}
+h2{
+    color:white;
+}
+h3, .h4{
+    color:white;
+}
+p,li{
+    color: var(--gold);
+    font-weight: 500;
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    color: var(--gold) !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Hero section */
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.booking-bar {
+    background-color: var(--navbar-bg);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--gold);
+    color: white;
+    border: none;
+    transition: opacity 0.3s;
+}
+
+.btn-gold:hover{
+    opacity: 0.9;
+    color: white;
+    background-color: var(--gold);
+}
+
+.btn-outline-gold {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    transition: all 0.3s;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: white;
+}
+.btn-outline-gold:onclick{
+
+}
+/* Room cards */
+.room-card {
+    border: none;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.room-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-bg);
+    color: var(--gold);
+    padding: 50px 0;
+}
+
+.footer a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
+
+/* Sections */
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+.room-card {
+    position: relative;
+}
+
+.room-card .btn {
+    position: absolute;
+    bottom: 0px;
+}
+
+input[type="text"], input[type="password"], input[type="email"],input[type="date"],input[type="tel"],select.form-control {
+    background-color: transparent;
+    border: 1px solid var(--gold);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'HotelFont', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, input[type="date"]:hover, input[type="tel"]:hover, select.form-control:hover,
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="tel"]:focus, select.form-control:focus{
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    color: white;
+}
+
+input[type="text"].error, input[type="password"].error, input[type="email"].error {
+    border-color: red; 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 215, 0, 0.1); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5);
+}
+
+body {
+    scrollbar-color: var(--gold) rgba(255, 215, 0, 0.1);
+    scrollbar-width: thin;
+}
+input::placeholder {
+    color: white !important;
+    opacity: 0.7 !important;
+}
+
+input:focus, input:not(:placeholder-shown) {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+input:focus::placeholder {
+    opacity: 0.5 !important;
+}
+.form-control:disabled{
+    background-color: transparent;
+}
+textarea.form-control{
+    background-color: transparent;
+    border: 1px solid var(--gold);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'HotelFont', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+    outline: none;
+}
+textarea.form-control:hover,
+textarea.form-control:focus{
+    color: white;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+option{
+    background-color: #212529;
+    color: white;
+}
+.description{
+    font-size: 13px;
+    color: white;
+}
+.py-5 {
+    padding-top: 10rem !important;
+    padding-bottom: 3rem !important;
+}
+.form-label
+{
+    color: white;
+}
