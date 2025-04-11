@@ -28,11 +28,13 @@ Telepítés:
 
 2. Telepítsd a szerver oldali függőségeket:
 
+       cd HotelAurumVista-main
        cd api
        npm install
 
 3. Telepítsd a kliens oldali függőségeket:
 
+        cd HotelAurumVista-main
         cd client
         npm install
 
@@ -44,11 +46,13 @@ Telepítés:
 
 5. Indítsd el a szervert:
 
+       cd HotelAurumVista-main
        cd api
        npm start
 
 6. ndítsd el a kliens alkalmazást:
 
+        cd HotelAurumVista-main
         cd client
         npm start
 A böngészőben nyisd meg a http://localhost:3001 címet
